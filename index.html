@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Online Code Compiler - Write, Run & Share Code | CodePen</title>
+    <meta name="title" content="Online Code Compiler - Write, Run & Share Code | CodePen">
+    <meta name="description" content="Free online code editor and compiler. Write, run and debug code in multiple programming languages. Perfect for learning, practicing and sharing code snippets.">
+    <meta name="keywords" content="online compiler, code editor, programming, coding, IDE, JavaScript, Python, Java, C++, HTML, CSS, web development, coding practice, algorithm, competitive programming">
+    <meta name="author" content="CodePen">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com/">
+    <meta property="og:title" content="Online Code Compiler - Write, Run & Share Code">
+    <meta property="og:description" content="Free online code editor and compiler. Write, run and debug code in multiple programming languages.">
+    <meta property="og:image" content="https://yourwebsite.com/programming2.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourwebsite.com/">
+    <meta property="twitter:title" content="Online Code Compiler - Write, Run & Share Code">
+    <meta property="twitter:description" content="Free online code editor and compiler. Write, run and debug code in multiple programming languages.">
+    <meta property="twitter:image" content="https://yourwebsite.com/programming2.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="programming.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="programming.png">
+
+    <!-- Canonical URL -->
+    <meta rel="canonical" href="https://yourwebsite.com/">
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Online Code Compiler",
+        "description": "Free online code editor and compiler for multiple programming languages",
+        "url": "https://yourwebsite.com",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "All",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <!-- Existing CSS and Script imports -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="preload" as="image" href="programming2.jpg">
+
+    <!-- Performance optimization -->
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="container">
+        <div class="compiler-container">
+            <div class="tab-container glass-panel">
+                <div class="logo">
+                    <i class="ri-code-box-line"></i>
+                    <h2>CodePen</h2>
+                </div>
+                <div class="category-selector">
+                    <select id="categorySelect" class="glass-select">
+                        <!-- Categories will be populated by JavaScript -->
+                    </select>
+                </div>
+                <div class="language-tabs">
+                    <!-- Language tabs will be populated by JavaScript -->
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="header">
+                    <div class="editor-controls">
+                        <select id="themeSelect" class="glass-select">
+                            <!-- Themes will be populated by JavaScript -->
+                        </select>
+                        <select id="fontSizeSelect" class="glass-select">
+                            <option value="12">12px</option>
+                            <option value="14" selected>14px</option>
+                            <option value="16">16px</option>
+                            <option value="18">18px</option>
+                        </select>
+                    </div>
+                    <div class="control-buttons">
+                        <button id="formatBtn" class="glass-button" title="Format Code (Shift+Alt+F)">
+                            <i class="ri-indent-increase"></i>
+                        </button>
+                        <button id="runBtn" class="glass-button" title="Run (Ctrl+Enter)">
+                            <i class="ri-play-fill"></i> Run
+                        </button>
+                    </div>
+                </div>
+                <div class="editor-container">
+                    <div id="editor" class="glass-panel"></div>
+                    <div class="input-output-container">
+                        <div class="glass-panel">
+                            <h3>Input</h3>
+                            <textarea id="input" placeholder="Enter program input here (if required)..."></textarea>
+                        </div>
+                        <div class="glass-panel">
+                            <h3>Output</h3>
+                            <div id="output"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ext-language_tools.js"></script>
+</body>
+</html>
